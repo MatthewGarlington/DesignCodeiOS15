@@ -14,6 +14,7 @@ struct ContentView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 26, height: 26)
+                    .cornerRadius(20)
                 Text("SwiftUI for iOS 15")
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -27,7 +28,8 @@ struct ContentView: View {
             .padding(.all, 20)
             .frame(height: 350)
             .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("Background")/*@END_MENU_TOKEN@*/)
-            
+            .cornerRadius(30)
+            .shadow(radius: 20)
     }
 }
 
