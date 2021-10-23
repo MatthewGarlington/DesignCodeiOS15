@@ -10,11 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
             VStack(alignment: .leading, spacing: 8.0) {
-                Image("Logo 2")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 26, height: 26)
-                    .cornerRadius(20)
+//                Image("Logo 2")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 26, height: 26)
+//                    .cornerRadius(20)
                 Text("SwiftUI for iOS 15")
                     .font(.largeTitle)
                     .fontWeight(.bold)
