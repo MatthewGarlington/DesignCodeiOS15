@@ -30,13 +30,14 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundColor(.secondary)
             }
-            .padding(.all, 20) 
+            .padding(.all, 20)
             .padding(.vertical, 20)
             .frame(height: 350)
-            .background(Color("Background"))
+            .background(.ultraThinMaterial)
             .cornerRadius(30)
             .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
             .padding(.horizontal, 20)
+            .background(Image("Blob 1").offset(x: 250, y: -100))
     }
 }
 
