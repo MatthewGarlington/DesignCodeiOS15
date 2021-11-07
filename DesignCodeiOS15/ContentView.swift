@@ -19,10 +19,11 @@ struct ContentView: View {
                 Text("SwiftUI for iOS 15")
                     .font(.largeTitle)
                     .fontWeight(.bold)
+                    .foregroundStyle(.linearGradient(colors: [.primary, .primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
                 Text("20 sections - 3 hours".uppercased())
                     .font(.footnote)
                     .fontWeight(.semibold)
-                    .foregroundColor(.secondary)
+                    .foregroundStyle(.secondary)
                 Text("Design and Code a SwiftUI 3 app with custom layouts, animations and gestures using XCode 13, SF Symbols, Canvas, Concurrency, Searchable, and a whole lot more")
                     .font(.footnote)
                     .multilineTextAlignment(.leading)
@@ -38,13 +39,18 @@ struct ContentView: View {
             .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
             .padding(.horizontal, 20)
             .background(Image("Blob 1").offset(x: 250, y: -100))
+            .overlay(Image("Illustration 5")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 230)
+                        .offset(x: 32, y: -80))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-.previewInterfaceOrientation(.portrait)
+            .previewInterfaceOrientation(.portrait)
 
     }
 }
