@@ -9,7 +9,19 @@ import SwiftUI
 
 struct AccountView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                Section {
+                    Text("Settings")
+                    Text("Billing")
+                    Text("Help")
+                }
+                .listRowSeparator(.hidden)
+               
+            }
+            .listStyle(.insetGrouped)
+            .navigationTitle("Account")
+        }
     }
 }
 
